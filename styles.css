@@ -45,6 +45,11 @@ body {
   color: #018587;
   font-size: 1rem;
 }
+.main-heading p {
+  font-size: 0.9rem;
+  text-align: center;
+  letter-spacing: 0px;
+}
 .contacts {
   text-align: center;
   font-size: 1rem;
@@ -60,49 +65,45 @@ body {
 }
 .skills {
   grid-template-columns: repeat(2 1fr);
-  grid-template-rows: repeat(2 1fr);
 }
 .skills h3 {
   text-align: center;
   font-size: 1rem;
   color: #00191a;
 }
+.left-skills {
+  grid-column: span 1;
+}
+.right-skills {
+  grid-column: span 1;
+}
 .skills h5 {
   width: 50%;
   color: white;
-  padding: 1rem;
   border: solid black;
   border-radius: 10%;
   background-color: rgb(173, 172, 172);
   text-align: center;
 }
-.one {
-  grid-column: span 1;
-  grid-row: span 1;
-}
-.two {
-  grid-column: span 1;
-  grid-row: span 1;
-}
-.three {
-  grid-column: span 1;
-  grid-row: span 1;
-}
-.four {
-  grid-column: span 1;
-  grid-row: span 1;
-}
-.Interests h3 {
+.Projects h3 {
   text-align: center;
   font-size: 1rem;
   color: #00191a;
 }
-.Interests h5 {
-  width: 50%;
-  color: white;
-  padding: 1rem;
-  border: solid black;
-  border-radius: 10%;
-  background-color: rgb(173, 172, 172);
+.References h3 {
   text-align: center;
+  font-size: 1rem;
+  color: #00191a;
+}
+.References p {
+  font-size: 0.9rem;
+  text-align: center;
+  letter-spacing: 0px;
+}
+.right-content {
+  padding: 1rem 3rem;
+}
+.work-experience {
+  font-size: 1rem;
+  color: #00191a;
 }
