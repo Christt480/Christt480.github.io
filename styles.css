@@ -66,7 +66,7 @@ body {
   color: white;
   border: solid black;
   border-radius: 7%;
-  background-color: rgb(173, 172, 172);
+  background-color: #899797;
   text-align: center;
 }
 .skills-1 {
@@ -78,7 +78,31 @@ body {
   font-size: 1rem;
   padding-left: 2rem;
 }
-
+.Interests-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.Interests h3 {
+  text-align: center;
+  font-size: 1rem;
+  color: #00191a;
+}
+.Interests h5 {
+  color: white;
+  border: solid black;
+  border-radius: 7%;
+  background-color: #899797;
+  text-align: center;
+}
+.Interests-1 {
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+.Interests-2 {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  padding-left: 2rem;
+}
 .Projects h3 {
   text-align: center;
   font-size: 1rem;
