@@ -171,3 +171,18 @@ body {
   font-size: 1rem;
   color: #018587;
 }
+.varsity {
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+.varsity ul {
+  list-style-type: none;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0px;
+}
+.varsity ul li:before {
+  content: "–";
+  position: absolute;
+  margin-left: -1rem;
+}
