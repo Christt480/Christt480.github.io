@@ -32,12 +32,16 @@
 .home {
   display: flex;
   flex-direction: column;
+  height: 840px;
+  justify-content: center;
+  align-items: center;
 }
 .home:before {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
+  background: url("images/christopher.jpg") no-repeat center center/cover;
   height: 900px;
   width: 100%;
   z-index: -1;
@@ -46,10 +50,11 @@
 .home-page {
   display: flex;
   flex-direction: column;
+  /* border: 1px solid beige; */
   align-items: center;
   position: absolute;
   top: 30%;
-  right: 50%;
+  right: 1 0%;
 }
 .name {
   font-family: "Nunito Sans", sans-serif;
@@ -74,189 +79,46 @@
   background-color: #018587;
   font-weight: bold;
 }
-body {
-  background-color: whitesmoke;
-}
-.main-content {
-  min-height: 100vh;
-  margin: 1rem auto;
-  width: 80%;
-  background-color: black;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-}
-.left-section {
-  grid-column: span 2;
-  height: 80%;
+.about-me {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 50px;
   background-color: beige;
 }
-.left-content {
-  padding: 1rem 3rem;
-}
-.main-heading {
-  width: 100%;
-  border-bottom: solid #00191a;
-}
-.main-heading img {
-  width: 100%;
-}
-.names {
-  text-align: center;
-  color: #00191a;
-  font-size: 1, 5rem;
-}
-.job-title {
-  text-align: center;
-  color: #018587;
-  font-size: 1rem;
-}
-.contacts {
-  text-align: center;
-  font-size: 1rem;
-  color: #00191a;
-}
-.contact-list {
-  font-size: 0.9rem;
-  text-align: center;
-  letter-spacing: 0px;
-}
-.contact-list li {
+.pic {
   display: flex;
 }
-.skill-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.skills h3 {
+.heading {
   text-align: center;
-  font-size: 1rem;
-  color: #00191a;
+  font-size: 2rem;
 }
-.skills h5 {
-  color: white;
-  border: solid black;
-  border-radius: 7%;
-  background-color: #899797;
-  text-align: center;
+.pic img {
+  width: 500px;
+  height: 400px;
 }
-.skills-1 {
-  letter-spacing: 1px;
-  font-size: 1rem;
+.intro {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 10px;
 }
-.skills-2 {
-  letter-spacing: 1px;
-  font-size: 1rem;
-  padding-left: 2rem;
+.skills {
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  align-items: center;
+  padding: 20px;
 }
-.Interests-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
 }
-.Interests h3 {
-  text-align: center;
-  font-size: 1rem;
-  color: #00191a;
-}
-.Interests h5 {
-  color: white;
-  border: solid black;
-  border-radius: 7%;
-  background-color: #899797;
-  text-align: center;
-}
-.Interests-1 {
-  letter-spacing: 1px;
-  font-size: 1rem;
-}
-.Interests-2 {
-  letter-spacing: 1px;
-  font-size: 1rem;
-  padding-left: 2rem;
-}
-.Projects h3 {
-  text-align: center;
-  font-size: 1rem;
-  color: #00191a;
-}
-.References h3 {
-  text-align: center;
-  font-size: 1rem;
-  color: #00191a;
-}
-.References p {
-  font-size: 0.9rem;
-  text-align: center;
-  letter-spacing: 0px;
-}
-.right-section {
-  grid-column: span 5;
-  height: 100%;
-  background-color: white;
-}
-.right-content {
-  padding: 1rem 3rem;
-}
-
-.right-content p {
-  font-size: 0.9rem;
-  letter-spacing: 0px;
-}
-.bio {
-  padding-bottom: 0.1rem;
-}
-.experience p {
-  font-size: 0.9rem;
-  letter-spacing: 0px;
-}
-.timeline {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.work-info {
-  letter-spacing: 1px;
-  font-size: 1rem;
-}
-.work-info h4 {
-  letter-spacing: 1px;
-  font-size: 1rem;
-  color: #018587;
-}
-.work-info-2 {
-  letter-spacing: 1px;
-  font-size: 1rem;
-}
-.work-info-2 ul {
-  list-style-type: none;
-  padding-left: 1rem;
-  font-size: 0.9rem;
-  letter-spacing: 0px;
-}
-.work-info-2 ul li:before {
-  content: "–";
-  position: absolute;
-  margin-left: -1rem;
-}
-.Institution h4 {
-  letter-spacing: 1px;
-  font-size: 1rem;
-  color: #018587;
-}
-.varsity {
-  letter-spacing: 1px;
-  font-size: 1rem;
-}
-.varsity ul {
-  list-style-type: none;
-  padding-left: 1rem;
-  font-size: 0.9rem;
-  letter-spacing: 0px;
-}
-.varsity ul li:before {
-  content: "–";
-  position: absolute;
-  margin-left: -1rem;
-}
-.header {
-  position: absolute;
-  background-color: black;
+.skills-list img {
+  width: 250px;
+  height: 160px;
+  margin: 10px;
 }
