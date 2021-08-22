@@ -1,0 +1,27 @@
+.nav-bar ul {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pic {
+  flex-direction: column;
+  align-items: center;
+}
+.pic img {
+  width: 420px;
+  height: 300px;
+}
+.input {
+  width: 70%;
+}
+.message {
+  width: 50%;
+}
+.send {
+  width: 20%;
+}
+.creator {
+  align-items: flex-start;
+}
+.social {
+  align-items: flex-end;
+}

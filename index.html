@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:800px)"
+      href="tablet.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
@@ -21,46 +26,136 @@
     <header>
       <nav class="nav-bar">
         <ul>
-          <li><a href="#" class="">Home</a></li>
-          <li><a href="#" class="">About Me</a></li>
-          <li><a href="#" class="">Skills</a></li>
-          <li><a href="#" class="">Work Experience</a></li>
-          <li><a href="#" class="">Qualifications</a></li>
-          <li><a href="#" class="">Contacts</a></li>
+          <li><a href="#home" class="">HOME</a></li>
+          <li><a href="#about-me" class="">ABOUT ME</a></li>
+          <li><a href="#skills" class="">SKILLS</a></li>
+          <li><a href="#work-experience" class="">PORTFOLIO</a></li>
+          <li><a href="#contact" class="">CONTACT</a></li>
         </ul>
       </nav>
     </header>
-    <section class="home">
+    <section id="home">
       <div class="home-page">
         <h1 class="name">Hi there, I am <br />Christopher Maphakane.</h1>
-        <button class="btn-hire">Hire me</button>
+        <h1>Web Developer</h1>
+        <a href="resume/resume.pdf" class="btn-download" download
+          >Download Resume</a
+        >
       </div>
     </section>
 
-    <section class="about-me">
+    <section id="about-me">
       <h1 class="heading">About Me</h1>
       <div class="pic">
         <img src="images/chris.jpg" alt="" />
         <div class="intro">
           <p>
             An IT graduate who is currently employed as a Web Developer Intern
-            at Telkom<br />
-            to learn about designing and building websites using JavaScript,
-            CSS, and HTML.
+            at Telkom to learn about designing and building websites using
+            JavaScript, CSS, and HTML.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="skills">
+    <section id="skills">
       <h1 class="heading">Skills</h1>
       <div class="skills-list">
         <img src="images/css.png" alt="" />
-        <img src="images/github.png" alt="" />
+        <img src="images/git.png" alt="" />
         <img src="images/html.png" alt="" />
-        <img src="images/js.png" alt="" />
-        <img src="images/vscode.png" alt="" />
+        <img src="images/javascript.png" alt="" />
+        <img src="images/visual.png" alt="" />
       </div>
     </section>
+
+    <section id="work-experience">
+      <h1 class="heading">Work Experience</h1>
+      <div class="row">
+        <div class="box">
+          <img src="images/work.png" alt="" />
+          <h1 class="heading">Network Monitoring</h1>
+          <p>
+            Network Monitoring (LAN/WAN). 1st Line Problem identification &
+            escalation. Access Servers remotely to monitor processes. Use Putty
+            to log onto routers and troubleshoot. Using network monitoring tools
+            and ticketing services to monitor & escalate events.
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/work.png" alt="" />
+          <h1 class="heading">Technical Specialist</h1>
+          <p>
+            Built Foresight servers and installed software. Vulnerability
+            Management.Ensure a secure logical IT environment for various
+            companies.Compliance monitoring and intrusion prevention.Generated
+            server licenses and server keys.Monthly report writing.
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/work.png" alt="" />
+          <h1 class="heading">Web Developer</h1>
+          <p>
+            Collaborate within an Agile team structure where they will assist
+            with developing code using such technologies
+            as:Java,Spring,JavaScript.Knowledge of JavaScript frameworks to
+            create rich interactive content.Develop front-end web application
+            using HTML/CSS and JavaScript.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="heading">Contact</h1>
+      <form action="" class="form">
+        <input
+          type="text"
+          name="name"
+          class="input"
+          placeholder="Enter your name"
+        />
+        <input
+          type="email"
+          name="email"
+          class="input"
+          placeholder="Enter your email"
+        />
+        <textarea
+          name="message"
+          class="message"
+          cols="30"
+          rows="10"
+          placeholder="Enter your message"
+        ></textarea>
+        <input type="submit" value="SEND" class="send" />
+      </form>
+    </section>
+    <footer>
+      <div class="footer">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/christopher-maphakane-770bb28b/"
+              target="_blank"
+              ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCW8jPPzV7wkgdP8CkG7oc3A"
+              target="_blank"
+              ><i class="fa fa-youtube-play" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/maphakanethoriso/"
+              target="_blank"
+              ><i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+            <a href="https://github.com/Christt480" target="_blank"
+              ><i class="fa fa-github-square" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

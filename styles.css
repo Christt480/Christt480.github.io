@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+#html {
+  scroll-behavior: smooth;
+}
 .nav-bar {
   display: flex;
   justify-content: center;
@@ -29,14 +32,14 @@
 .nav-bar ul li a:hover {
   background-color: beige;
 }
-.home {
+#home {
   display: flex;
   flex-direction: column;
   height: 840px;
   justify-content: center;
   align-items: center;
 }
-.home:before {
+#home::before {
   content: "";
   position: absolute;
   top: 0;
@@ -50,10 +53,9 @@
 .home-page {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid beige; */
   align-items: center;
   position: absolute;
-  top: 30%;
+  top: 20%;
   right: 1 0%;
 }
 .name {
@@ -68,18 +70,22 @@
   text-align: center;
   color: #018587;
 }
-.btn-hire {
+.btn-download {
   padding: 10px 35px;
   background-color: beige;
   outline: none;
   transition: 0.6s ease;
+  text-decoration: none;
+  color: #018587;
+  font-weight: bold;
 }
-.btn-hire:hover {
+.btn-download:hover {
   cursor: pointer;
   background-color: #018587;
   font-weight: bold;
+  color: black;
 }
-.about-me {
+#about-me {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -104,10 +110,10 @@
   text-align: justify;
   padding: 10px;
 }
-.skills {
+#skills {
   display: flex;
   flex-direction: column;
-  background-color: beige;
+
   align-items: center;
   padding: 20px;
 }
@@ -121,4 +127,110 @@
   width: 250px;
   height: 160px;
   margin: 10px;
+}
+#work-experience {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: beige;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 400px;
+  border: 1px solid black;
+  margin: 10px;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 15px;
+  background: linear-gradient(to top, #018587 50%, white 50%);
+  background-size: 100% 200%;
+  transition: all 0.8s;
+}
+.box:hover {
+  background-position: left bottom;
+  color: white;
+  border: none;
+  box-shadow: 0 0 20px #018587;
+}
+.box img {
+  width: 80px;
+  height: 80px;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: beige;
+  color: black;
+  padding: 20px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+}
+.input {
+  padding: 12px;
+  margin: 15px;
+  width: 30%;
+  border: none;
+  outline: none;
+}
+.message {
+  width: 20%;
+  padding: 10px;
+  margin: 15px;
+  border: none;
+  outline: none;
+}
+.send {
+  width: 10%;
+  padding: 10px;
+  margin: 40px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+}
+.send:hover {
+  cursor: pointer;
+  background-color: #018587;
+  color: black;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #018587;
+  position: sticky;
+  padding-top: 2%;
+  align-items: center;
+}
+.footer ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+.footer ul li {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 4px 10px;
+  transform: all 0.5s ease;
+}
+.footer ul li a:hover {
+  background-color: beige;
 }
