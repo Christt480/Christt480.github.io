@@ -21,6 +21,13 @@
 .pic img {
   width: 420px;
   height: 300px;
+  margin-bottom: 10px;
+}
+.intro h4 {
+  margin-top: 10px;
+  font-family: sans-serif;
+  color: rgb(107, 107, 107);
+  margin-top: 40px;
 }
 .input {
   width: 70%;
