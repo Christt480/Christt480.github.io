@@ -2,6 +2,18 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.home-page {
+  top: 30%;
+}
+.name {
+  font-size: 2rem;
+}
+.title {
+  font-size: 1.5rem;
+}
+.btn-download {
+  padding: 5px 5px;
+}
 .pic {
   flex-direction: column;
   align-items: center;
