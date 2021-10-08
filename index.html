@@ -41,15 +41,29 @@
         </label>
       </nav>
     </header>
-    <div class="container">
-      <main id="main">
-        <h1 class="greeting">Hi there, I am</h1>
-        <h1 class="name">Christopher Maphakane.</h1>
-        <h1 class="title">Web Developer</h1>
-        <a href="resume/resume.pdf" id="btn-download" download
-          >Download Resume</a
-        >
-      </main>
+    <div id="container">
+      <div id="main">
+        <div id="greetings">
+          <ul>
+            <li>Hi there, I am</li>
+          </ul>
+        </div>
+        <div id="name">
+          <ul>
+            <li>Christopher Maphakane.</li>
+          </ul>
+        </div>
+        <div id="title">
+          <ul>
+            <li>Web Developer</li>
+          </ul>
+        </div>
+        <div class="button">
+          <ul>
+            <li><a href="resume/resume.pdf" download>Download Resume</a></li>
+          </ul>
+        </div>
+      </div>
       <div id="about">
         <h1 class="heading">About Me</h1>
         <div class="intro">
@@ -67,12 +81,43 @@
       </div>
       <div id="skills">
         <h1 class="heading">Skills</h1>
-        <div class="skills-list">
-          <img src="images/css.png" alt="" />
-          <img src="images/git.png" alt="" />
-          <img src="images/html.png" alt="" />
-          <img src="images/javascript.png" alt="" />
-          <img src="images/visual.png" alt="" />
+        <div class="row">
+          <div class="skill-box">
+            <img src="images/web_dev.png" alt="" />
+            <h1 class="heading">Programming Languages</h1>
+            <ul>
+              <li>Javascript</li>
+              <li>HTML 5</li>
+              <li>CSS</li>
+              <li>Java</li>
+              <li>PHP</li>
+            </ul>
+          </div>
+          <div class="skill-box">
+            <img src="images/git.png" alt="" />
+            <h1 class="heading">HARD SKILLS</h1>
+            <ul>
+              <li>GIT</li>
+              <li>Debugging</li>
+              <li>Algorithms</li>
+              <li>DNS Management</li>
+              <li>Front End Frameworks</li>
+              <li>Cloud Computing</li>
+              <li>Networking skills</li>
+            </ul>
+          </div>
+          <div class="skill-box">
+            <img src="images/soft.jpg" alt="" />
+            <h1 class="heading">SOFT SKILLS</h1>
+            <ul>
+              <li>Collaboration</li>
+              <li>Communication</li>
+              <li>Problem Solving</li>
+              <li>Organization Skills</li>
+              <li>Enthusiasm</li>
+              <li>Interpersonal Skills</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div id="portfolio">

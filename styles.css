@@ -79,42 +79,48 @@ nav #icon {
     text-align: center;
     transition: all 0.5s;
   }
-  .name {
-    font-size: 1.2rem;
-    margin-left: 0px;
+  #greetings ul li {
+    margin-top: 40px;
+    margin-left: 120px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 30px;
   }
-  .title {
-    font-size: 1.2rem;
-    margin-left: 0px;
+  #name ul li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 80px;
   }
-  nav ul li {
-    display: block;
-    margin: 20px 0;
-    line-height: 30px;
+  #title ul li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 140px;
+    color: #018587;
+    margin-bottom: 30px;
   }
-  nav ul li a {
-    font-size: 20px;
+  #main a {
+    font-size: 1rem;
+  }
+  .button ul li {
+    padding-left: 140px;
+  }
+  .button ul li a {
+    padding: 10px 20px;
+    background-color: beige;
+    outline: none;
+    transition: 0.6s ease;
+    text-decoration: none;
+    color: #018587;
     font-weight: bold;
   }
-
-  nav ul li a:hover {
+  .button ul li a:hover {
+    cursor: pointer;
     background-color: #018587;
+    font-weight: bold;
+    color: black;
   }
-  nav ul.show {
-    left: 0;
-  }
-  .name {
-    font-size: 1.1rem;
-  }
-  .title {
-    font-size: 1.1rem;
-  }
-  .greeting {
-    font-size: 1.1rem;
-  }
-  #btn-download {
-    font-size: 0.6rem;
-    padding: 3px 5px;
+  #skills {
+    height: 800px;
   }
   .box {
     width: 40px;
@@ -128,6 +134,10 @@ nav #icon {
     margin: 0;
     padding: 0;
   }
+  #about {
+    height: 350px;
+    font-size: 1.1rem;
+  }
   .intro {
     width: 96%;
   }
@@ -136,8 +146,10 @@ nav #icon {
   }
   #skills {
     margin-top: 80px;
-    height: 600px;
     margin-bottom: 500px;
+  }
+  .skills-list img {
+    display: list-item;
   }
   .contact-details ul li {
     font-size: 0.9rem;
@@ -157,25 +169,346 @@ nav #icon {
     margin-top: 10px;
     margin-bottom: 200px;
   }
+  .skills-list img {
+    display: list-item;
+  }
+  .welcome {
+    font-size: 0.5rem;
+  }
+  .button ul li {
+    padding-left: 100px;
+  }
+  #skills {
+    height: 800px;
+  }
 }
 @media (width: 540px) {
   #about {
-    height: 200px;
+    height: 300px;
   }
   #skills {
     margin-top: 10px;
     margin-bottom: 200px;
   }
-}
-@media (width: 280px) {
+  .name ul li {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 10px;
+  }
   #skills {
-    margin-top: 150px;
+    height: 700px;
+  }
+  .welcome {
+    font-size: 0.5rem;
+  }
+}
+@media (width: 360px) {
+  #container {
+    width: 86%;
+  }
+  nav {
+    height: 80px;
+    width: 100%;
+    background-color: #018587;
   }
   #main {
-    height: 350px;
+    grid-area: main;
+    height: 600px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  #main li {
+    margin-left: 0px;
+    font-size: 0.5rem;
+  }
+
+  #greetings ul li {
+    margin-top: 70px;
+    margin-left: 120px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 0px;
+  }
+  #name ul li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 80px;
+  }
+  #title ul li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 120px;
+    color: #018587;
+    margin-bottom: 10px;
+  }
+  .button ul li {
+    padding-left: 110px;
+  }
+  .button ul li a {
+    padding: 10px 10px;
+    background-color: beige;
+    outline: none;
+    transition: 0.6s ease;
+    text-decoration: none;
+    color: #018587;
+    font-weight: bold;
+  }
+  .button ul li a:hover {
+    cursor: pointer;
+    background-color: #018587;
+    font-weight: bold;
+    color: black;
+  }
+
+  #about {
+    height: 300px;
+    font-size: 1rem;
+  }
+  #skills {
+    height: 800px;
   }
 }
-.container {
+@media (width: 768px) {
+  .button ul li {
+    padding-left: 140px;
+  }
+  #about {
+    height: 220px;
+    font-size: 1.2rem;
+  }
+  #skills {
+    height: 300px;
+  }
+}
+@media (width: 280px) {
+  nav {
+    height: 80px;
+    width: 100%;
+    background-color: #018587;
+  }
+
+  #about {
+    height: 230px;
+    font-size: 0.7rem;
+    margin-top: 0px;
+  }
+  #greetings ul li {
+    margin-top: 0px;
+    margin-left: 120px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 0px;
+  }
+  #name ul li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 80px;
+  }
+  #title ul li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 120px;
+    color: #018587;
+    margin-bottom: 10px;
+  }
+  .button ul li {
+    padding-left: 110px;
+  }
+  .button ul li a {
+    padding: 10px 10px;
+    background-color: beige;
+    outline: none;
+    transition: 0.6s ease;
+    text-decoration: none;
+    color: #018587;
+    font-weight: bold;
+  }
+}
+@media (width: 320px) {
+  #greetings ul li {
+    margin-top: 70px;
+    margin-left: 100px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 0px;
+  }
+  #name ul li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 50px;
+  }
+  #title ul li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 100px;
+    color: #018587;
+    margin-bottom: 10px;
+  }
+  .button ul li {
+    padding-left: 90px;
+  }
+  .button ul li a {
+    padding: 10px 10px;
+    background-color: beige;
+    outline: none;
+    transition: 0.6s ease;
+    text-decoration: none;
+    color: #018587;
+    font-weight: bold;
+  }
+  #about {
+    height: 370px;
+    font-size: 1rem;
+  }
+  #skills {
+    height: 800px;
+  }
+}
+@media (width: 965px) {
+  #greetings ul li {
+    margin-top: 70px;
+    margin-left: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 120px;
+  }
+  #name ul li {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 140px;
+  }
+  #title ul li {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 220px;
+    color: #018587;
+    margin-bottom: 30px;
+  }
+  #main a {
+    font-size: 1rem;
+  }
+  .button ul li {
+    padding-left: 200px;
+  }
+  .button ul li a {
+    padding: 20px 50px;
+    background-color: beige;
+    outline: none;
+    transition: 0.6s ease;
+    text-decoration: none;
+    color: #018587;
+    font-weight: bold;
+  }
+  .button ul li a:hover {
+    cursor: pointer;
+    background-color: #018587;
+    font-weight: bold;
+    color: black;
+  }
+}
+@media (width: 1024px) {
+  #greetings ul li {
+    margin-top: 70px;
+    margin-left: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 120px;
+  }
+  #name ul li {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 140px;
+  }
+  #title ul li {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 220px;
+    color: #018587;
+    margin-bottom: 30px;
+  }
+  #main a {
+    font-size: 1rem;
+  }
+  .button ul li {
+    padding-left: 200px;
+  }
+  .button ul li a {
+    padding: 20px 50px;
+    background-color: beige;
+    outline: none;
+    transition: 0.6s ease;
+    text-decoration: none;
+    color: #018587;
+    font-weight: bold;
+  }
+  .button ul li a:hover {
+    cursor: pointer;
+    background-color: #018587;
+    font-weight: bold;
+    color: black;
+  }
+  #about {
+    height: 200px;
+  }
+  .intro h4 {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1048px) {
+  #greetings ul li {
+    margin-top: 70px;
+    margin-left: 120px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 160px;
+  }
+  #name ul li {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 200px;
+  }
+  #title ul li {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 280px;
+    color: #018587;
+    margin-bottom: 30px;
+  }
+  #main a {
+    font-size: 1rem;
+  }
+  .button ul li {
+    padding-left: 270px;
+  }
+  .button ul li a {
+    padding: 20px 50px;
+    background-color: beige;
+    outline: none;
+    transition: 0.6s ease;
+    text-decoration: none;
+    color: #018587;
+    font-weight: bold;
+  }
+  .button ul li a:hover {
+    cursor: pointer;
+    background-color: #018587;
+    font-weight: bold;
+    color: black;
+  }
+  #skills {
+    margin-top: 0px;
+    height: 450px;
+    margin-bottom: 20px;
+  }
+  #about {
+    height: 200px;
+  }
+  .intro h4 {
+    font-size: 1.2rem;
+  }
+}
+#container {
   display: grid;
   height: 100vh;
   width: 100%;
@@ -208,50 +541,18 @@ nav #icon {
   z-index: -1;
   opacity: 0.8;
 }
-.name {
-  text-align: left;
-  margin-left: 60px;
-  margin-top: 0px;
-}
-.title {
-  text-align: left;
-  margin-left: 100px;
-  margin-top: 0px;
-  color: #018587;
-  padding-bottom: 10px;
-}
-.greeting {
-  text-align: left;
-  margin-left: 100px;
-  margin-top: 20px;
-}
-#btn-download {
-  padding: 5px 10px;
-  background-color: beige;
-  outline: none;
-  transition: 0.6s ease;
-  text-decoration: none;
-  color: #018587;
-  font-weight: bold;
-  margin-left: 120px;
-}
-#btn-download:hover {
-  cursor: pointer;
-  background-color: #018587;
-  font-weight: bold;
-  color: black;
-}
+
 #about {
   box-sizing: border-box;
   padding: 20px;
   margin-bottom: 60px;
   margin-top: 20px;
   background-color: beige;
-  height: 300px;
   grid-area: about;
   letter-spacing: normal;
   text-align: center;
   word-spacing: normal;
+  align-items: center;
 }
 .heading {
   text-align: center;
@@ -259,40 +560,42 @@ nav #icon {
   margin-bottom: 20px;
 }
 .intro {
-  text-align: justify;
+  align-items: center;
+  text-align: center;
 }
 .intro h4 {
-  margin-top: 50px;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
   font-family: sans-serif;
-  color: rgb(107, 107, 107);
-  margin-top: 40px;
+  color: black;
+  margin-top: 10px;
   letter-spacing: normal;
-  text-align: left;
   word-spacing: normal;
 }
-#skills {
-  grid-area: skills;
-  align-items: center;
-  background-color: beige;
-  height: 450px;
-}
-.skills-list {
+.skill-box {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  box-sizing: border-box;
-}
-.skills-list img {
-  width: 250px;
-  height: 160px;
+  flex-direction: column;
+  width: 200px;
+  height: 350px;
+  border: 1px solid black;
   margin: 10px;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 15px;
+  background: white;
 }
-#portfolio {
-  grid-area: portfolio;
-  padding: 20px;
-  background-color: beige;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.skill-box img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.skill-box a {
+  text-decoration: none;
+  color: black;
+}
+.skill-box ul li {
+  list-style: circle;
 }
 .row {
   display: flex;
