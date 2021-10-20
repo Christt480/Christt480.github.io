@@ -79,19 +79,28 @@ nav #icon {
     text-align: center;
     transition: all 0.5s;
   }
-  #greetings ul li {
+  nav ul.show{
+    left: 0;
+    background-color: #787a7a;
+  } 
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  } 
+  #greetings ul li{
     margin-top: 40px;
     margin-left: 90px;
     font-size: 1.5rem;
     font-weight: bold;
     padding-left: 30px;
   }
-  #name ul li {
+  #name ul li{
     font-size: 1.5rem;
     font-weight: bold;
     padding-left: 60px;
   }
-  #title ul li {
+  #title ul li{
     font-size: 1.5rem;
     font-weight: bold;
     padding-left: 110px;
@@ -100,11 +109,11 @@ nav #icon {
   }
   #main a {
     font-size: 1rem;
-  }
-  .button ul li {
+}
+  .button ul li{
     padding-left: 110px;
   }
-  .button ul li a {
+  .button ul li a{
     padding: 10px 20px;
     background-color: beige;
     outline: none;
@@ -119,7 +128,7 @@ nav #icon {
     font-weight: bold;
     color: black;
   }
-  #skills {
+  #skills{
     height: 800px;
   }
   .box {
@@ -134,9 +143,9 @@ nav #icon {
     margin: 0;
     padding: 0;
   }
-  #about {
+  #about{
     height: 350px;
-    font-size: 1.1rem;
+  font-size: 1.1rem;
   }
   .intro {
     width: 96%;
@@ -148,9 +157,9 @@ nav #icon {
     margin-top: 80px;
     margin-bottom: 500px;
   }
-  .skills-list img {
+  .skills-list img{
     display: list-item;
-  }
+    }
   .contact-details ul li {
     font-size: 0.9rem;
   }
@@ -169,20 +178,29 @@ nav #icon {
     margin-top: 10px;
     margin-bottom: 200px;
   }
-  .skills-list img {
+  .skills-list img{
     display: list-item;
-  }
+    }
   .welcome {
-    font-size: 0.5rem;
+    font-size: .5rem;
   }
-  .button ul li {
+  .button ul li{
     padding-left: 100px;
   }
-  #skills {
+  #skills{
     height: 800px;
   }
 }
 @media (width: 540px) {
+  nav ul.show{
+    left: 0;
+    background-color: #787a7a;
+  } 
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
   #about {
     height: 300px;
   }
@@ -194,12 +212,12 @@ nav #icon {
     font-size: 1rem;
     font-weight: bold;
     padding-left: 10px;
-  }
-  #skills {
-    height: 700px;
-  }
+}
+#skills{
+  height: 700px;
+}
   .welcome {
-    font-size: 0.5rem;
+    font-size: .5rem;
   }
 }
 @media (width: 360px) {
@@ -209,122 +227,121 @@ nav #icon {
   nav {
     height: 80px;
     width: 100%;
-    background-color: #018587;
-  }
-  #main {
-    grid-area: main;
-    height: 600px;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
+    background-color:#018587;
+}
+nav ul.show{
+  left: 0;
+  background-color: #787a7a;
+} 
+nav ul li {
+  display: block;
+  margin: 20px 0;
+  line-height: 30px;
+}
+#main {
+  grid-area: main;
+  height: 600px;
+  justify-content:flex-start;
+  align-items:flex-start;
+}
 
-  #main li {
+#main li{
     margin-left: 0px;
-    font-size: 0.5rem;
-  }
-
-  #greetings ul li {
-    margin-top: 70px;
-    margin-left: 120px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding-left: 0px;
-  }
-  #name ul li {
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding-left: 80px;
-  }
-  #title ul li {
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding-left: 120px;
-    color: #018587;
-    margin-bottom: 10px;
-  }
-  .button ul li {
-    padding-left: 110px;
-  }
-  .button ul li a {
-    padding: 10px 10px;
-    background-color: beige;
-    outline: none;
-    transition: 0.6s ease;
-    text-decoration: none;
-    color: #018587;
-    font-weight: bold;
-  }
-  .button ul li a:hover {
-    cursor: pointer;
-    background-color: #018587;
-    font-weight: bold;
-    color: black;
-  }
-
-  #about {
-    height: 300px;
-    font-size: 1rem;
-  }
-  #skills {
-    height: 800px;
-  }
+    font-size: .5rem;
 }
-@media (width: 768px) {
-  #about {
-    height: 220px;
-    font-size: 1.2rem;
-  }
-  #skills {
-    height: 300px;
-  }
-  .button ul li {
-    padding-left: 180px;
-  }
-  #title ul li {
-    padding-left: 185px;
-  }
-  #name ul li {
-    padding-left: 140px;
-  }
-  #greetings ul li {
-    margin-left: 170px;
-  }
+
+#greetings ul li{
+  margin-top: 70px;
+  margin-left: 120px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-left: 0px;
 }
+#name ul li{
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-left: 80px;
+}
+#title ul li{
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-left: 120px;
+  color: #018587;
+  margin-bottom: 10px;
+}
+.button ul li{
+  padding-left: 110px;
+}
+.button ul li a{
+  padding: 10px 10px;
+  background-color: beige;
+  outline: none;
+  transition: 0.6s ease;
+  text-decoration: none;
+  color: #018587;
+  font-weight: bold;
+  
+}
+.button ul li a:hover {
+  cursor: pointer;
+  background-color: #018587;
+  font-weight: bold;
+  color: black;
+}
+
+#about {
+  height: 300px;
+  font-size: 1rem;
+}
+#skills{
+  height: 800px;
+}
+}
+
 @media (width: 280px) {
+  
   nav {
     height: 80px;
     width: 100%;
     background-color: #018587;
-  }
-
-  #about {
+}
+nav ul.show{
+  left: 0;
+  background-color: #787a7a;
+} 
+nav ul li {
+  display: block;
+  margin: 20px 0;
+  line-height: 30px;
+}
+  #about{
     height: 230px;
-    font-size: 0.7rem;
-    margin-top: 0px;
+  font-size: .7rem;
+  margin-top: 0px;
   }
-  #greetings ul li {
+  #greetings ul li{
     margin-top: 0px;
     margin-left: 100px;
     font-size: 1.2rem;
     font-weight: bold;
     padding-left: 0px;
   }
-  #name ul li {
+  #name ul li{
     font-size: 1.2rem;
     font-weight: bold;
     padding-left: 50px;
   }
-  #title ul li {
+  #title ul li{
     font-size: 1.2rem;
     font-weight: bold;
     padding-left: 90px;
     color: #018587;
     margin-bottom: 10px;
   }
-  .button ul li {
+  .button ul li{
     padding-left: 75px;
   }
-  .button ul li a {
+  .button ul li a{
     padding: 10px 10px;
     background-color: beige;
     outline: none;
@@ -332,43 +349,62 @@ nav #icon {
     text-decoration: none;
     color: #018587;
     font-weight: bold;
+    
   }
 }
 @media (width: 375px) {
+  nav ul.show{
+    left: 0;
+    background-color: #787a7a;
+  } 
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
   #greetings ul li {
     padding-left: 0px;
-  }
-  #name ul li {
+}
+#name ul li {
     padding-left: 60px;
-  }
-  #title ul li {
+}
+#title ul li {
     padding-left: 110px;
-  }
+}
 }
 @media (width: 320px) {
-  #greetings ul li {
+  nav ul.show{
+    left: 0;
+    background-color: #787a7a;
+  } 
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 25px;
+  }
+  #greetings ul li{
     margin-top: 35px;
     margin-left: 100px;
     font-size: 1.2rem;
     font-weight: bold;
     padding-left: 0px;
   }
-  #name ul li {
+  #name ul li{
     font-size: 1.2rem;
     font-weight: bold;
     padding-left: 50px;
   }
-  #title ul li {
+  #title ul li{
     font-size: 1.2rem;
     font-weight: bold;
     padding-left: 100px;
     color: #018587;
     margin-bottom: 10px;
   }
-  .button ul li {
+  .button ul li{
     padding-left: 90px;
   }
-  .button ul li a {
+  .button ul li a{
     padding: 10px 10px;
     background-color: beige;
     outline: none;
@@ -376,29 +412,30 @@ nav #icon {
     text-decoration: none;
     color: #018587;
     font-weight: bold;
+    
   }
-  #about {
+  #about{
     height: 370px;
-    font-size: 1rem;
+  font-size: 1rem;
   }
-  #skills {
+  #skills{
     height: 800px;
   }
 }
-@media (width: 965px) {
-  #greetings ul li {
+@media (width: 965px){
+  #greetings ul li{
     margin-top: 70px;
     margin-left: 100px;
     font-size: 2rem;
     font-weight: bold;
     padding-left: 120px;
   }
-  #name ul li {
+  #name ul li{
     font-size: 2rem;
     font-weight: bold;
     padding-left: 140px;
   }
-  #title ul li {
+  #title ul li{
     font-size: 2rem;
     font-weight: bold;
     padding-left: 220px;
@@ -407,11 +444,11 @@ nav #icon {
   }
   #main a {
     font-size: 1rem;
-  }
-  .button ul li {
+}
+  .button ul li{
     padding-left: 200px;
   }
-  .button ul li a {
+  .button ul li a{
     padding: 20px 50px;
     background-color: beige;
     outline: none;
@@ -428,19 +465,19 @@ nav #icon {
   }
 }
 @media (width: 1024px) {
-  #greetings ul li {
+  #greetings ul li{
     margin-top: 70px;
     margin-left: 100px;
     font-size: 2rem;
     font-weight: bold;
     padding-left: 120px;
   }
-  #name ul li {
+  #name ul li{
     font-size: 2rem;
     font-weight: bold;
     padding-left: 140px;
   }
-  #title ul li {
+  #title ul li{
     font-size: 2rem;
     font-weight: bold;
     padding-left: 220px;
@@ -449,11 +486,11 @@ nav #icon {
   }
   #main a {
     font-size: 1rem;
-  }
-  .button ul li {
+}
+  .button ul li{
     padding-left: 200px;
   }
-  .button ul li a {
+  .button ul li a{
     padding: 20px 50px;
     background-color: beige;
     outline: none;
@@ -470,25 +507,25 @@ nav #icon {
   }
   #about {
     height: 200px;
-  }
-  .intro h4 {
+   }
+   .intro h4 {
     font-size: 1.2rem;
-  }
+   }
 }
 @media (min-width: 1048px) {
-  #greetings ul li {
+  #greetings ul li{
     margin-top: 70px;
     margin-left: 120px;
     font-size: 2rem;
     font-weight: bold;
     padding-left: 160px;
   }
-  #name ul li {
+  #name ul li{
     font-size: 2rem;
     font-weight: bold;
     padding-left: 200px;
   }
-  #title ul li {
+  #title ul li{
     font-size: 2rem;
     font-weight: bold;
     padding-left: 280px;
@@ -497,11 +534,11 @@ nav #icon {
   }
   #main a {
     font-size: 1rem;
-  }
-  .button ul li {
+}
+  .button ul li{
     padding-left: 270px;
   }
-  .button ul li a {
+  .button ul li a{
     padding: 20px 50px;
     background-color: beige;
     outline: none;
@@ -522,10 +559,10 @@ nav #icon {
     margin-bottom: 20px;
   }
   #about {
-    height: 200px;
+   height: 200px;
   }
   .intro h4 {
-    font-size: 1.2rem;
+   font-size: 1.2rem;
   }
 }
 #container {
@@ -562,6 +599,8 @@ nav #icon {
   opacity: 0.8;
 }
 
+
+
 #about {
   box-sizing: border-box;
   padding: 20px;
@@ -581,18 +620,20 @@ nav #icon {
 }
 .intro {
   align-items: center;
-  text-align: center;
+  text-align:center;
+  
 }
 .intro h4 {
   text-align: center;
   padding: 20px 20px 20px 20px;
-  font-family: sans-serif;
-  color: black;
+  font-family:sans-serif;
+  color:black;
   margin-top: 10px;
   letter-spacing: normal;
   word-spacing: normal;
+  
 }
-.skill-box {
+.skill-box{
   display: flex;
   flex-direction: column;
   width: 200px;
@@ -614,8 +655,8 @@ nav #icon {
   text-decoration: none;
   color: black;
 }
-.skill-box ul li {
-  list-style: circle;
+.skill-box ul li{
+  list-style:circle;
 }
 .row {
   display: flex;
@@ -727,3 +768,4 @@ nav #icon {
 .footer ul li a:hover {
   color: white;
 }
+
