@@ -150,7 +150,7 @@ nav #icon {
     padding: 0;
   }
   #about {
-    height: 350px;
+    height: 400px;
     font-size: 1.1rem;
   }
   .intro {
@@ -178,7 +178,7 @@ nav #icon {
 }
 @media (width: 768px) {
   #about {
-    height: 200px;
+    height: 300px;
   }
   #skills {
     margin-top: 10px;
@@ -299,7 +299,10 @@ nav #icon {
     font-size: 1rem;
   }
   #skills {
-    height: 800px;
+    height: 730px;
+  }
+  #portfolio {
+    height: 1350px;
   }
 }
 
@@ -520,7 +523,7 @@ nav #icon {
     color: black;
   }
   #about {
-    height: 200px;
+    height: 250px;
   }
   .intro h4 {
     font-size: 1.2rem;
@@ -615,8 +618,8 @@ nav #icon {
 #about {
   box-sizing: border-box;
   padding: 20px;
-  margin-bottom: 60px;
-  margin-top: 20px;
+  margin-bottom: 100px;
+  margin-top: 100px;
   grid-area: about;
   letter-spacing: normal;
   text-align: center;
@@ -675,7 +678,7 @@ nav #icon {
   display: flex;
   flex-direction: column;
   width: 200px;
-  height: 350px;
+  height: 400px;
   border: 1px solid black;
   margin: 10px;
   align-items: center;
@@ -693,12 +696,16 @@ nav #icon {
   text-decoration: none;
   color: black;
 }
+#portfolio {
+  margin-top: 100px;
+}
 #portfolio p {
   text-align: center;
-  width: 90%;
+  width: 80%;
 }
 #contact {
   grid-area: contact;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
